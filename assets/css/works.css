@@ -1,0 +1,362 @@
+.wks_nav {
+    margin-bottom: 32px;
+}
+
+.wks_nav_list {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 22px;
+}
+
+.wks_nav_list li {
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 43px;
+    padding-left: 63px;
+}
+
+.wks_nav_list li::after {
+    background: var(--c_gray);
+    content: "";
+    height: 1px;
+    left: 14px;
+    position: absolute;
+    top: 17px;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .8s cubic-bezier(.45, .12, .04, .96);
+    width: 45.5px;
+}
+
+@media (hover: hover) {
+    .wks_nav_list li:hover::after {
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .8s cubic-bezier(.45, .12, .04, .96);
+    }
+}
+
+
+.wks_cat_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2px;
+    transition: .5s ease;
+}
+
+.wks_cat_list li {
+    width: calc(20% - 1.6px);
+    background-color: var(--c_white);
+    text-align: center;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.wks_cat_list li.-active {
+    color: var(--c_white);
+    background-color: var(--c_black);
+}
+
+@media (hover: hover) {
+    .wks_cat_list li:hover {
+        color: var(--c_white);
+        background-color: var(--c_black);
+    }
+}
+
+.wks_item:not(:last-child) {
+    margin-bottom: 111px;
+}
+
+.wks_item {
+    display: none;
+}
+
+.wks_item.-active {
+    display: block;
+}
+
+.wks_item a {
+    text-decoration: none;
+}
+
+.wks_item_p {
+    margin-bottom: 35px;
+}
+
+.wks_item_p img {
+    width: 100%;
+}
+
+.wks_item_ttl {
+    font-size: 27px;
+}
+
+.wks_item_cat {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 12px;
+}
+
+.wks_item_cat li:not(:first-child) {
+    position: relative;
+    padding-left: 12px;
+}
+
+.wks_item_cat li:not(:first-child)::after {
+    content: "/";
+    left: 4px;
+    position: absolute;
+    top: 0;
+}
+
+.wks_item_info {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 21px;
+}
+
+.wks_item_info li:not(:first-child) {
+    position: relative;
+    margin-left: 16px;
+    padding-left: 20px;
+}
+
+.wks_item_info li:not(:first-child)::before {
+    position: absolute;
+    content: "|";
+    top: 3.5px;
+    left: 0;
+    font-size: 13px;
+}
+
+.-works.-single .c_main {
+    padding-top: 0;
+}
+
+.wks_hero {
+    position: relative;
+    max-height: 100svh;
+    margin-bottom: 107px;
+}
+
+.wks_hero_info {
+    position: absolute;
+}
+
+.wks_hero_bg {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.wks_hero_bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--c_black);
+    opacity: .3;
+}
+
+.wks_hero_bg img {
+    width: 100%;
+}
+
+.wks_hero_info {
+    position: absolute;
+    top: 46%;
+    left: 11%;
+    width: 78%;
+    color: var(--c_white);
+    z-index: 1;
+}
+
+.wks_hero_ttl {
+    font-size: 60px;
+}
+
+.wks_hero_info a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 28px;
+    padding-left: 55px;
+    font-size: 27px;
+    text-decoration: none;
+}
+
+.wks_hero_info a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 45px;
+    height: 1px;
+    background: var(--c_white);
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .8s cubic-bezier(.45, .12, .04, .96);
+}
+
+@media (hover: hover) {
+    .wks_hero_info a:hover::after {
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .8s cubic-bezier(.45, .12, .04, .96);
+    }
+}
+
+.wks_page_nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 90px;
+}
+
+.wks_page_nav a {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    padding-left: 55px;
+    text-decoration: none;
+}
+
+.wks_page_nav a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 45px;
+    height: 1px;
+    background: var(--c_gray);
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .8s cubic-bezier(.45, .12, .04, .96);
+}
+
+@media (hover: hover) {
+    .wks_page_nav a:hover::after {
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .8s cubic-bezier(.45, .12, .04, .96);
+    }
+}
+
+.wks_post_box {
+    margin-top: 56px;
+    padding: 90px 14% 130px;
+    background: var(--c_white);
+}
+
+.wks_post_box img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 43px auto;
+}
+
+@media screen and (max-width:767px) {
+    .-works .c_page_hd {
+        margin-bottom: 27px;
+    }
+
+    .wks_nav_list {
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+
+    .wks_nav_list li {
+        margin-right: 0;
+        padding-left: 43px;
+        font-size: 13px;
+    }
+
+    .wks_nav_list li::after {
+        height: 1px;
+        top: 50%;
+        left: 0;
+        width: 33px;
+    }
+
+    .wks_cat_list li {
+        width: calc(50% - 1px);
+    }
+
+    .wks_item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .wks_item_p {
+        margin-bottom: 10px;
+    }
+
+    .wks_item_ttl {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .wks_item_cat {
+        padding-top: 0;
+    }
+
+    .wks_item_info {
+        padding-top: 0;
+        font-size: 12px;
+    }
+
+    .wks_item_info li:not(:first-child) {
+        margin-left: 2px;
+        padding-left: 10px;
+    }
+
+    .wks_item_info li:not(:first-child)::before {
+        top: -2px;
+    }
+
+    .wks_hero {
+        margin-bottom: 36px;
+    }
+
+    .wks_hero_info {
+        position: absolute;
+        top: 59.7%;
+        left: 10%;
+        width: 80%;
+    }
+
+    .wks_hero_ttl {
+        font-size: 22px;
+    }
+
+    .wks_hero_info a {
+        margin-top: 18px;
+        padding-left: 30px;
+        font-size: 14px;
+    }
+
+    .wks_hero_info a::after {
+        width: 23px;
+    }
+
+    .-works.-single .c_main .c_inner {
+        padding: 0;
+    }
+
+    .wks_page_nav {
+        padding: 0 10svw;
+        margin-bottom: 46px;
+        font-size: 12px;
+    }
+
+    .wks_post_box {
+        padding: 46px 11% 57px;
+    }
+
+    .-works.-single .c_btn_l {
+        margin: 56px auto 0;
+    }
+}

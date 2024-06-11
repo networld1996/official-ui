@@ -1,0 +1,61 @@
+.-about .c_page_hd {
+    margin-bottom: 17px;
+}
+
+.abt_p_mark {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.abt_p_mark a {
+    flex-shrink: 0;
+}
+
+.abt_office {
+    display: flex;
+    justify-content: space-between;
+}
+
+.abt_office:not(:last-of-type) {
+    margin-bottom: 72px;
+}
+
+.abt_office_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 61%;
+    padding-top: 22px;
+}
+
+.abt_office_ttl {
+    font-weight: bold;
+}
+
+.abt_office_map {
+    height: 70%;
+}
+
+.abt_office_map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:767px) {
+    .abt_office {
+        display: block;
+    }
+
+    .abt_office_p {
+        width: 61%;
+    }
+
+    .abt_office_box {
+        width: 100%;
+    }
+
+    .abt_office_map {
+        width: 100%;
+    }
+}

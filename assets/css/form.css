@@ -1,0 +1,306 @@
+.f_group {
+    margin-bottom: 131px;
+}
+
+.f_ttl {
+    display: inline-block;
+    margin-bottom: 22px;
+    font-size: var(--fs_p_txt);
+    font-weight: bold;
+}
+
+.f_completed {
+    padding: 20px;
+    font-size: var(--fs_p_txt);
+    color: var(--c_red);
+    background-color: var(--c_thin_red);
+    font-weight: bold;
+}
+
+.f_group dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0 30px;
+}
+
+.f_group dt {
+    position: relative;
+    width: 280px;
+    font-weight: bold;
+    border-bottom: solid 1px var(--c_black);
+}
+
+.f_group dt.-req::after {
+    content: "必須";
+    color: var(--c_white);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding: 0 2px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: var(--c_black);
+    transform: translateY(-50%);
+}
+
+.f_group dt:first-of-type {
+    border-top: solid 1px var(--c_black);
+}
+
+.f_group dd {
+    width: calc(100% - 310px);
+    border-bottom: solid 1px var(--c_gray);
+}
+
+.f_group dd:first-of-type {
+    border-top: solid 1px var(--c_gray);
+}
+
+.f_group dt,
+.f_group dd {
+    display: block;
+    padding: 40px 0;
+}
+
+.f_group input[type="text"],
+.f_group input[type="email"],
+.f_group input[type="tel"],
+.f_group input[type="url"],
+.f_group input[type="date"],
+.f_group textarea {
+    width: 100%;
+}
+
+.f_group input[type="text"]::placeholder,
+.f_group input[type="email"]::placeholder,
+.f_group input[type="tel"]::placeholder,
+.f_group input[type="url"]::placeholder,
+.f_group textarea::placeholder {
+    color: var(--c_dark_gray);
+}
+
+.f_group input[type="text"]:focus,
+.f_group input[type="email"]:focus,
+.f_group input[type="tel"]:focus,
+.f_group input[type="url"]:focus,
+.f_group input[type="date"]:focus,
+.f_group textarea:focus {
+    background-color: var(--c_thin_gray);
+}
+
+.f_group input[type="text"].-error,
+.f_group input[type="email"].-error,
+.f_group input[type="tel"].-error,
+.f_group input[type="url"].-error,
+.f_group input[type="date"].-error,
+.f_group textarea.-error {
+    padding: 7px;
+    border: 1px solid var(--c_red);
+}
+
+.f_group input[type="file"] {
+    display: none;
+}
+
+.f_group input[type="file"] + label {
+    display: inline-block;
+    padding: 0px 10px;
+    background-color: var(--c_black);
+    color: var(--c_white);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.f_file {
+    margin-bottom: 10px;
+}
+
+.f_file.-error {
+    padding: 7px;
+    background-color: var(--c_thin_red);
+}
+
+.f_place_txt {
+    color: var(--c_dark_gray);
+}
+
+.f_err_txt {
+    color: var(--c_red);
+}
+
+.f_radio.-error {
+    padding: 7px;
+    background-color: var(--c_thin_red);
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--c_gray);
+    border-radius: 50%;
+    position: relative;
+}
+
+input[type="radio"]:checked {
+    background-color: var(--c_bg);
+    border-color: var(--c_gray);
+}
+
+input[type="radio"]:checked::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--c_black);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="radio"]+label {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.f_policy {
+    border: 1px solid var(--c_gray);
+    margin-bottom: 122px;
+    max-height: 332px;
+    overflow: scroll;
+}
+
+.f_policy_box {
+    padding: 30px;
+}
+
+.f_policy_txt {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.f_policy_txt {
+    font-size: var(--fs_small_txt);
+}
+
+.f_policy_txt em {
+    font-weight: bold;
+}
+
+.f_req_hol input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--c_gray);
+    position: relative;
+    margin-right: 10px;
+}
+
+.f_req_hol input[type="checkbox"]:checked::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.f_req_txt {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.f_req {
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.f_submit {
+    margin-top: 63px;
+    text-align: center;
+}
+
+@media screen and (max-width:767px) {
+    .f_group {
+        margin-bottom: 52px;
+    }
+
+    .f_ttl {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .f_group dl {
+        display: block;
+    }
+
+    .f_group dt {
+        text-align: left;
+        width: 100%;
+        padding: 10px 0 14px 0;
+        font-weight: 500;
+        border-bottom: solid 1px #b9b9b9;
+    }
+
+    .f_group dt:first-of-type {
+        border-top: none;
+    }
+
+    .f_group dd {
+        width: 100%;
+        padding: 14px 0 13px;
+        border-top: none;
+        border-bottom: solid 1px #020202;
+    }
+
+    .f_group input[type="text"],
+    .f_group input[type="email"],
+    .f_group input[type="tel"],
+    .f_group input[type="date"],
+    .f_group textarea {
+        border: none;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    input[type="radio"]+label {
+        margin-right: 12px;
+    }
+
+    .f_policy {
+        margin-bottom: 32px;
+    }
+
+    .f_policy_box {
+        padding: 12px 8px;
+    }
+
+    .f_policy_txt {
+        font-size: 12px;
+    }
+
+    .f_req_hol input[type="checkbox"] {
+        margin-right: 0;
+    }
+
+    .f_req_txt {
+        font-size: 12px;
+    }
+
+    .f_submit {
+        margin-top: 22px;
+    }
+}
