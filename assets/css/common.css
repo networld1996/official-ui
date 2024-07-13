@@ -19,6 +19,7 @@
     --fs_txt: 16px;
     --fs_small_txt: 14px;
     --fs_page_ttl: 71px;
+    --fs_page_ttl_middle: 38px;
     --fs_page_txt: 20px;
 }
 
@@ -421,6 +422,10 @@ p {
 .c_page_hd_ttl {
     font-size: var(--fs_page_ttl);
     margin-bottom: 30px;
+}
+
+.c_page_hd_ttl.-middle {
+    font-size: var(--fs_page_ttl_middle);
 }
 
 .c_page_hd_txt {
