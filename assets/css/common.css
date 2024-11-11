@@ -19,7 +19,7 @@
     --fs_txt: 16px;
     --fs_small_txt: 14px;
     --fs_page_ttl: 71px;
-    --fs_page_ttl_middle: 38px;
+    --fs_page_ttl_middle: 30px;
     --fs_page_txt: 20px;
 }
 
@@ -319,7 +319,7 @@ p {
 
 .c_nav_list > li a {
     display: inline-block;
-    padding: .8em .8em;
+    padding: 0.5em .6em;
     text-decoration: none;
 }
 
@@ -344,6 +344,11 @@ p {
 
 .c_nav.-service .c_nav_bg {
     background-image: url(/assets/img/cmn/img-nav-service.jpg);
+    opacity: 1;
+}
+
+.c_nav.-system .c_nav_bg {
+    background-image: url(/assets/img/cmn/img-nav-system.jpg);
     opacity: 1;
 }
 

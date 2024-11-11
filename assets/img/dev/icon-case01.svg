@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82" height="82" viewBox="0 0 82 82">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_210" data-name="長方形 210" width="46.846" height="36.873" fill="none" stroke="#707070" stroke-width="1.3"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_225" data-name="グループ 225" transform="translate(-171 -1814)">
+    <circle id="楕円形_9" data-name="楕円形 9" cx="41" cy="41" r="41" transform="translate(171 1814)" fill="#f0efea"/>
+    <g id="グループ_216" data-name="グループ 216" transform="translate(188.3 1832.627)">
+      <g id="グループ_133" data-name="グループ 133" clip-path="url(#clip-path)">
+        <path id="パス_6538" data-name="パス 6538" d="M40.306,85.986A4.986,4.986,0,1,1,35.32,81,4.986,4.986,0,0,1,40.306,85.986Z" transform="translate(-24.362 -65.057)" fill="none" stroke="#343840" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+        <path id="パス_6539" data-name="パス 6539" d="M5,141.639a9.973,9.973,0,1,1,19.946,0" transform="translate(-4.016 -105.75)" fill="none" stroke="#343840" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+        <path id="パス_6540" data-name="パス 6540" d="M166.973,85.986A4.986,4.986,0,1,1,161.987,81,4.986,4.986,0,0,1,166.973,85.986Z" transform="translate(-126.097 -65.057)" fill="none" stroke="#343840" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+        <path id="パス_6541" data-name="パス 6541" d="M131.667,141.639a9.973,9.973,0,1,1,19.946,0" transform="translate(-105.751 -105.75)" fill="none" stroke="#343840" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+        <path id="パス_6542" data-name="パス 6542" d="M103.639,9.986A4.986,4.986,0,1,1,98.653,5,4.986,4.986,0,0,1,103.639,9.986Z" transform="translate(-75.229 -4.016)" fill="none" stroke="#343840" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+        <path id="パス_6543" data-name="パス 6543" d="M85.5,58.159a9.968,9.968,0,0,1,13.189,0" transform="translate(-68.668 -44.709)" fill="none" stroke="#343840" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+      </g>
+    </g>
+  </g>
+</svg>

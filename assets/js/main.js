@@ -94,7 +94,7 @@ function set_c_cursor() {
 
 function hover_c_nav(){
     // マウスオーバー時の処理
-    const _class = ['-service', '-works', '-about', '-recruit', '-contact'];
+    const _class = ['-service', '-system', '-works', '-about', '-recruit', '-contact'];
     $.each(_class, function(index, value){
         $('#c_nav .c_nav_list').find('.'+value+' a').on({
             'mouseenter' : function() {
